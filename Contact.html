@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact — Mirai Jewelry</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet"/>
+    <link rel="shortcut icon" type="mirai-icon" href="images/MiraiIcon.png"/>
+    <link rel="stylesheet" href="Contact.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mirai Jewelry — Get in Touch">
+</head>
+<body>
+
+    <!-- ─── HEADER ─── -->
+    <header>
+        <div class="header">
+            <a href="index.html" class="logo">
+                Mirai
+                <span>未来</span>
+            </a>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="Products.html">Products</a>
+                <a href="About.html">About Us</a>
+                <a href="Contact.html" class="active">Contact</a>
+            </nav>
+            <a href="LogIn.html" class="login-icon"><i class="fas fa-user"></i></a>
+        </div>
+    </header>
+
+    <!-- ─── PAGE HERO ─── -->
+    <section class="page-hero">
+        <div class="page-hero-inner">
+            <div class="hero-deco">
+                <span></span>
+                <i class="fas fa-gem"></i>
+                <span></span>
+            </div>
+            <p class="hero-eyebrow">We'd love to hear from you</p>
+            <h1 class="hero-title">Get in <em>Touch</em></h1>
+            <p class="hero-sub">Reach out and we'll get back to you within 24 hours</p>
+        </div>
+        <div class="hero-img-wrap">
+            <img src="images/young-woman-wearing-stylish-accessories.png" alt="Jewelry background"/>
+            <div class="hero-img-overlay"></div>
+        </div>
+    </section>
+
+    <!-- ─── MAIN CONTENT ─── -->
+    <main class="contact-main">
+
+        <!-- ─── FORM + SIDEBAR ─── -->
+        <div class="contact-layout">
+
+            <!-- Form -->
+            <div class="contact-form-wrap reveal">
+                <p class="form-eyebrow">Send a Message</p>
+                <h2 class="form-title">How can we <em>help?</em></h2>
+
+                <form class="contact-form" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">First Name</label>
+                            <input id="first-name" type="text" placeholder="Jane"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name</label>
+                            <input id="last-name" type="text" placeholder="Doe"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input id="email" type="email" placeholder="jane@example.com" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input id="subject" type="text" placeholder="Inquiry about a piece..."/>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Tell us what you have in mind..."></textarea>
+                    </div>
+                    <button class="btn-primary" type="submit">
+                        Send Message <i class="fas fa-arrow-right"></i>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="contact-sidebar reveal">
+
+                <div class="sidebar-block">
+                    <div class="sidebar-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>Visit Us</h3>
+                    <p>123 Jewel Street<br>San Jose del Monte, Bulacan<br>Philippines</p>
+                </div>
+
+                <div class="sidebar-divider"></div>
+
+                <div class="sidebar-block">
+                    <div class="sidebar-icon"><i class="fas fa-envelope"></i></div>
+                    <h3>Email Us</h3>
+                    <p>hello@miraijewelry.com<br>support@miraijewelry.com</p>
+                </div>
+
+                <div class="sidebar-divider"></div>
+
+                <div class="sidebar-block">
+                    <div class="sidebar-icon"><i class="fas fa-phone"></i></div>
+                    <h3>Call Us</h3>
+                    <p>+63 912 345 6789</p>
+                </div>
+
+                <div class="sidebar-divider"></div>
+
+                <div class="sidebar-block">
+                    <div class="sidebar-icon"><i class="fas fa-share-alt"></i></div>
+                    <h3>Follow Us</h3>
+                    <div class="sidebar-social">
+                        <a href="https://x.com/_cabiiii" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/Cabzjustin" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/cabz_jstn/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@_cabejstn?lang=en" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+            </aside>
+        </div>
+
+        <!-- ─── HOURS ─── -->
+        <div class="hours-section reveal">
+            <div class="hours-header">
+                <div class="hero-deco" style="justify-content:flex-start;">
+                    <span style="width:40px;"></span>
+                    <i class="fas fa-clock"></i>
+                    <span style="width:40px; background: linear-gradient(to right, var(--gold), transparent);"></span>
+                </div>
+                <p class="form-eyebrow">When to find us</p>
+                <h2 class="form-title">Store <em>Hours</em></h2>
+            </div>
+
+            <div class="hours-grid">
+                <div class="hours-row">
+                    <span class="day">Monday</span>
+                    <span class="time-bar"><span class="bar-fill"></span></span>
+                    <span class="time">8:00 AM – 8:00 PM</span>
+                </div>
+                <div class="hours-row">
+                    <span class="day">Tuesday</span>
+                    <span class="time-bar"><span class="bar-fill"></span></span>
+                    <span class="time">8:00 AM – 8:00 PM</span>
+                </div>
+                <div class="hours-row">
+                    <span class="day">Wednesday</span>
+                    <span class="time-bar"><span class="bar-fill"></span></span>
+                    <span class="time">8:00 AM – 8:00 PM</span>
+                </div>
+                <div class="hours-row">
+                    <span class="day">Thursday</span>
+                    <span class="time-bar"><span class="bar-fill"></span></span>
+                    <span class="time">8:00 AM – 8:00 PM</span>
+                </div>
+                <div class="hours-row">
+                    <span class="day">Friday</span>
+                    <span class="time-bar"><span class="bar-fill"></span></span>
+                    <span class="time">8:00 AM – 8:00 PM</span>
+                </div>
+                <div class="hours-row">
+                    <span class="day">Saturday</span>
+                    <span class="time-bar"><span class="bar-fill" style="width:50%"></span></span>
+                    <span class="time">10:00 AM – 6:00 PM</span>
+                </div>
+                <div class="hours-row closed">
+                    <span class="day">Sunday</span>
+                    <span class="time-bar"><span class="bar-fill" style="width:0%"></span></span>
+                    <span class="time">Closed</span>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ─── FOOTER ─── -->
+    <footer>
+        <div class="footer">
+            <div class="footer-brand">
+                <div class="logo">
+                    Mirai
+                    <span>未来</span>
+                </div>
+                <p>Fine jewelry for the forward-thinking. Each piece is a promise — to beauty, to craftsmanship, to you.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigate</h4>
+                <a href="index.html">Home</a>
+                <a href="Products.html">Products</a>
+                <a href="About.html">About Us</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="footer-social">
+                    <a href="https://x.com/_cabiiii" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/Cabzjustin" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/cabz_jstn/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@_cabejstn?lang=en" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Mirai Jewelry by Justin Cabe</p>
+            <p>Adorn the Future ✦</p>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll reveal
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                    observer.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.08 });
+        reveals.forEach(el => observer.observe(el));
+
+        // Animate bar fills on scroll
+        const bars = document.querySelectorAll('.bar-fill');
+        const barObserver = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.style.transition = 'width 1s ease';
+                    barObserver.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        bars.forEach(b => barObserver.observe(b));
+    </script>
+</body>
+</html>

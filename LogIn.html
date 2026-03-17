@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login — Mirai Jewelry</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet"/>
+    <link rel="shortcut icon" type="mirai-icon" href="images/MiraiIcon.png"/>
+    <link rel="stylesheet" href="LogIn.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mirai Jewelry — Sign In">
+</head>
+<body>
+
+    <!-- ─── HEADER ─── -->
+    <header>
+        <div class="header">
+            <a href="index.html" class="logo">
+                Mirai
+                <span>未来</span>
+            </a>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="Products.html">Products</a>
+                <a href="About.html">About Us</a>
+                <a href="Contact.html">Contact</a>
+            </nav>
+            <a href="LogIn.html" class="login-icon active-icon"><i class="fas fa-user"></i></a>
+        </div>
+    </header>
+
+    <!-- ─── LOGIN LAYOUT ─── -->
+    <main class="login-main">
+
+        <!-- Left decorative panel -->
+        <div class="login-panel">
+            <div class="panel-content">
+                <div class="panel-deco">
+                    <span></span>
+                    <i class="fas fa-gem"></i>
+                    <span></span>
+                </div>
+                <p class="panel-eyebrow">Welcome Back</p>
+                <h2 class="panel-title">Adorn<br><em>the Future</em></h2>
+                <p class="panel-sub">Sign in to access your account, track orders, and discover your next favorite piece.</p>
+                <div class="panel-features">
+                    <div class="panel-feature">
+                        <i class="fas fa-box-open"></i>
+                        <span>Track your orders</span>
+                    </div>
+                    <div class="panel-feature">
+                        <i class="fas fa-heart"></i>
+                        <span>Save your wishlist</span>
+                    </div>
+                    <div class="panel-feature">
+                        <i class="fas fa-tag"></i>
+                        <span>Exclusive member offers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right form panel -->
+        <div class="login-form-wrap">
+            <div class="login-form-inner">
+
+                <p class="form-eyebrow">Member Access</p>
+                <h1 class="form-title">Sign <em>In</em></h1>
+
+                <form class="login-form" novalidate>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <div class="input-wrap">
+                            <i class="fas fa-envelope"></i>
+                            <input id="email" type="email" placeholder="jane@example.com" required/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="input-wrap">
+                            <i class="fas fa-lock"></i>
+                            <input id="password" type="password" placeholder="••••••••" required/>
+                            <button type="button" class="toggle-pw" aria-label="Toggle password visibility">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-meta">
+                        <label class="remember-me">
+                            <input type="checkbox" id="remember"/>
+                            <span class="checkmark"></span>
+                            Remember me
+                        </label>
+                        <a href="#" class="forgot-link">Forgot password?</a>
+                    </div>
+
+                    <button type="submit" class="btn-primary">
+                        Sign In <i class="fas fa-arrow-right"></i>
+                    </button>
+
+                    <div class="form-divider">
+                        <span></span>
+                        <p>or</p>
+                        <span></span>
+                    </div>
+
+                    <p class="register-prompt">
+                        Don't have an account?
+                        <a href="#">Create one</a>
+                    </p>
+                </form>
+
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        // Toggle password visibility
+        const toggleBtn = document.querySelector('.toggle-pw');
+        const pwInput = document.getElementById('password');
+        toggleBtn.addEventListener('click', () => {
+            const isHidden = pwInput.type === 'password';
+            pwInput.type = isHidden ? 'text' : 'password';
+            toggleBtn.querySelector('i').className = isHidden ? 'fas fa-eye-slash' : 'fas fa-eye';
+        });
+    </script>
+</body>
+</html>
